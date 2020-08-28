@@ -73,7 +73,7 @@ class LoginController extends Controller
         }else{  //nếu ko tìm thấy email trong csdl-> Hợp lệ
             Session::put('email',$email);
             DB::insert('insert into users (name_user, email, password, address, phone_number, avatar,job,type_of_user,status_user) values (?, ?, ?, ?, ?, ?, ?,?,?)', [$name, $email,$password, $address, $phone, $avatar, $job,"customer",1]);
-            return view('user.home');
+            return redirect('/');
         }
     }
 

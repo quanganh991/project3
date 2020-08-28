@@ -8,7 +8,7 @@
                         <ol class="breadcrumb">
                             <li><a href="{{URL::to('/')}}">Trang chủ</a></li>
                         </ol>
-                        <h1>{{$detailGocNhin->title_gocnhin}}</h1>
+                        <p  style="color: #0b2e13; font-size: 35px; font-weight: bold">{{$detailGocNhin->title_gocnhin}}</p>
                         <div class="post_commentbox"><a href="#"><i class="fa fa-user"></i>{{$author->name_user}}</a>
                             <span><i class="fa fa-calendar"></i>{{$detailGocNhin->latest_update_gocnhin}}</span>
                         </div>
@@ -19,7 +19,7 @@
                             <p><?php echo nl2br($detailGocNhin->context_gocnhin) ?></p>
                         </div>
                         <!--Bình luận-->
-                        <h1 style="color: orangered">Bình luận:</h1>
+                        <p  style="color: orangered; font-size: 30px; font-weight: bold">Bình luận:</p>
                         <?php
                         $newsDetail = DB::table('news')
                             ->where('id_gocnhin', $detailGocNhin->id_gocnhin)
@@ -58,12 +58,12 @@
                             @if($user->status_user == 1)    <!--Nếu ko bị khóa tài khoản thì mới hiển thị bình luận-->
                                 <hr>
                                 @if($user->type_of_user != 'admin')
-                                    <h4 style="color: #2b527e">{{$eachCommentList->name_user}}</h4>
+                                    <p style="color: #2b527e; font-size: 20px; font-weight: bold">{{$eachCommentList->name_user}}</p>
                                 @elseif($user->type_of_user == 'admin')
-                                    <h4 style="color: red">Admin: {{$eachCommentList->name_user}}</h4>
+                                    <p style="color: red; font-size: 20px; font-weight: bold">Admin: {{$eachCommentList->name_user}}</p>
                                 @endif
-                                <h5><i class="fa fa-comment"
-                                       aria-hidden="true"></i> {{$eachCommentList->context_coment}}</h5>
+                                <p  style=" font-size: 20px; font-weight: bold"><i class="fa fa-comment"
+                                       aria-hidden="true"></i> {{$eachCommentList->context_coment}}</p>
                                 @endif
                                 @if(Session::get('id_admin'))
                                     <a href="{{URL::to('/delete-comment/'.$eachCommentList->id_coment)}}">Xóa
@@ -151,7 +151,7 @@
                             </ul>
                         </div>
                         <div class="related_post">
-                            <h2>Bài viết liên quan<i class="fa fa-thumbs-o-up"></i></h2>
+                            <p  style=" font-size: 30px; font-weight: bold">Bài viết liên quan<i class="fa fa-thumbs-o-up"></i></p>
                             <ul class="spost_nav wow fadeInDown animated">
                                 @foreach($relevantGocNhin as $eachOfRelevantGocNhin)
                                     <?php

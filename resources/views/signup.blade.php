@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="box">
-                    <h2 class="text-uppercase">Đăng ký</h2>
+                    <p style="color: red; font-style: oblique; font-size: 30px" class="text-uppercase">Đăng ký</p>
                     <p class="lead">Chưa có tài khoản? Đăng ký ngay</p>
                     <hr>
                     <form action="{{URL::to('/signup-check')}}" method="get">
@@ -74,7 +74,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="box">
-                    <h2 class="text-uppercase">Đăng nhập</h2>
+                    <p style="color: red; font-style: oblique; font-size: 30px" class="text-uppercase">Đăng nhập</p>
                     <p class="lead">Đã có tài khoản ? Đăng nhập tại đây</p>
                     <!-- <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
                     <hr>

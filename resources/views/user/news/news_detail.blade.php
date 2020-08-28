@@ -158,7 +158,7 @@
                                 @if($user->type_of_user != 'admin')
                                     <p style="color: #2b527e; font-size: 20px; font-weight: bold">{{$eachCommentList->name_user}}</p>
                                 @elseif($user->type_of_user == 'admin')
-                                    <p style="color: red; font-size: 20px; font-weight: bold">Admin: {{$eachCommentList->name_user}}</>
+                                    <p style="color: red; font-size: 20px; font-weight: bold">Admin: {{$eachCommentList->name_user}}</p>
                                 @endif
                                 <p style="color: red; font-size: 15px; font-weight: bold"><i class="fa fa-comment"
                                        aria-hidden="true"></i> {{$eachCommentList->context_coment}}</p>
@@ -210,11 +210,10 @@
                                             ->get()->first();
                                         ?>
                                         @if($userRep->status_user == 1)
-                                            @if($userRep->type_of_user != 'customer')
+                                            @if($userRep->type_of_user != 'admin')
                                                 <p style="color: white; font-size: 20px; font-weight: bold" class="dropdown-item">{{$userRep->name_user}}</p>
                                             @elseif($userRep->type_of_user == 'admin')
-                                                <p style="color: yellow; font-size: 20px; font-weight: bold" class="dropdown-item">
-                                                    Admin: {{$userRep->name_user}}</p>
+                                                <p style="color: yellow; font-size: 20px; font-weight: bold" class="dropdown-item">Admin: {{$userRep->name_user}}</p>
                                             @endif
                                             <p style="color: lightsalmon; font-size: 20px; font-weight: bold" class="dropdown-item"><i
                                                     class="fa fa-comment"

@@ -47,7 +47,7 @@
                     <?php
                     $AD = DB::table('users')->where('id_user',Session::get('id_admin'))->get()->first();
                     ?>
-                    <img src="{{asset('public/image/AdminAvatar/'.$AD->avatar)}}" class="img-circle elevation-2" alt="User Image">
+                    <img src="{{$AD->avatar}}" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
                     <?php

@@ -121,12 +121,14 @@
                 </td>
                 <td>{{ $eachPendingTournament->audience_quantity }} / {{$eachPendingTournament->max_participants}}</td>
                 <td>
-<?php
+                                        <?php
                                         $quanquan = DB::table('users')->where('id_user',$eachPendingTournament->id_champion)->get()->first();
                                         $aquan = DB::table('users')->where('id_user',$eachPendingTournament->id_runner_up)->get()->first();
                                         ?>
+                    @if($quanquan != null && $aquan != null)
                                             <p>Á quân: {{$quanquan->name_user}}</p>
                                             <p>Quán quân: {{$aquan->name_user}}</p>
+                    @endif
                 </td>
                 <td>
                     @if($eachPendingTournament->isapproved == 'pending')
@@ -194,12 +196,14 @@
                 </td>
                 <td>{{ $eachCancelledTournament->audience_quantity }} / {{$eachCancelledTournament->max_participants}}</td>
                 <td>
-                    <?php
+                                        <?php
                                         $quanquan = DB::table('users')->where('id_user',$eachCancelledTournament->id_champion)->get()->first();
                                         $aquan = DB::table('users')->where('id_user',$eachCancelledTournament->id_runner_up)->get()->first();
                                         ?>
+                    @if($quanquan != null && $aquan != null)
                                             <p>Á quân: {{$quanquan->name_user}}</p>
                                             <p>Quán quân: {{$aquan->name_user}}</p>
+                        @endif
                 </td>
                 <td>
                     @if($eachCancelledTournament->isapproved == 'pending')

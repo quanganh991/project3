@@ -35,7 +35,7 @@
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
                     <div class="box">
-                        <h2 class="text-uppercase text-center">Đăng nhập</h2>
+                        <p style="color: red; font-style: oblique; font-size: 30px" class="text-uppercase text-center">Đăng nhập</p>
                         <form action="{{URL::to('/login-check')}}" method="get">
                             <div class="form-group">
                                 <label for="email">Tài Khoản</label>

@@ -285,15 +285,15 @@
                             Tên đội: <li>{{$tournament->team2}}</li>
                             <?php
                             $won = DB::table('tournament')
-                                ->where('team1',$tournament->team2)
+                                ->where('team2',$tournament->team2)
                                 ->where('result_team2','>','result_team1')
                                 ->count();
                             $lost = DB::table('tournament')
-                                ->where('team1',$tournament->team2)
+                                ->where('team2',$tournament->team2)
                                 ->where('result_team2','<','result_team1')
                                 ->count();
                             $draw = DB::table('tournament')
-                                ->where('team1',$tournament->team2)
+                                ->where('team2',$tournament->team2)
                                 ->where('result_team2','=','result_team1')
                                 ->count();
                             ?>

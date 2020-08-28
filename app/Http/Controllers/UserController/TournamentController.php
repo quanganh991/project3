@@ -51,7 +51,7 @@ class TournamentController extends Controller
         } else {
             DB::table('participant')
                 ->where('id_participant', $id_participant)
-                ->whereNot('isapproved', 'approved')
+                ->where('isapproved','!=', 'approved')
                 ->update([
                     'isapproved' => 'denied'
                 ]);

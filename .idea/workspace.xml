@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c6a081b-7e43-4f1b-b36c-c481f202e3eb" name="Default Changelist" comment="" />
+    <list default="true" id="8c6a081b-7e43-4f1b-b36c-c481f202e3eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController/TournamentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController/TournamentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/journalist/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journalist/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/news/detail_goc_nhin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/news/detail_goc_nhin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/news/news_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/news/news_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/tournament/all_event.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/tournament/all_event.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/tournament/detail_tournament.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/tournament/detail_tournament.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +41,9 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="webtintuc" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7">
     <include_path>
@@ -135,6 +150,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1etyLrZDCbzFHREuXa2w2GEfjF8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -232,6 +248,8 @@
       <workItem from="1598499111492" duration="3713000" />
       <workItem from="1598524994388" duration="1356000" />
       <workItem from="1598526947902" duration="884000" />
+      <workItem from="1598537622252" duration="283000" />
+      <workItem from="1598579955134" duration="2980000" />
     </task>
     <servers />
   </component>
@@ -271,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="375" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595830457630" />
-    <state x="477" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1598537622134">
+    <state x="477" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1598579954982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598537622134" />
+    <state x="477" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598579954982" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1596889847961">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
